@@ -34,6 +34,22 @@ li {
 }
 
 /** Card */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cards-title > *::first-letter {
+  font-size: 2rem;
+  color: red;
+}
+
 .card {
   width: 90%;
   height: 100%;
@@ -41,6 +57,31 @@ li {
   padding: 1.5rem 1rem;
   box-shadow: 0px 0px 4px red;
   border-radius: 3px;
+}
+
+.cards-center .card {
+  text-align: center;
+}
+
+.card-center {
+  text-align: center;
+}
+
+
+.card-content {
+  font-size: 1rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+}
+
+.card-text {
+
+}
+
+.card-title {
+
 }
 
 /** Button */
@@ -154,28 +195,11 @@ li {
 .infos {
 }
 
-.infos-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/**Soins */
 
-.infos-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+/** Infos */
 
-.infos-card-content {
-  font-size: 1rem;
-}
-
-.infos-card-icon {
-  font-size: 3rem;
-}
-
-
-
+/** services */
 
 
 
