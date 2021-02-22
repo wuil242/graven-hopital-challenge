@@ -319,6 +319,44 @@ img {
 }
 
 
+/**Télécharger l'application */
+
+/**/
+.application {
+  box-shadow: 0px 0px 4px black;
+  width: 100%;
+  height: 100%;
+  background: url("../images/mid.png") no-repeat;
+}
+
+.application-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-title {
+
+}
+
+.application-text {
+
+}
+
+.application-playstore,
+.application-applestore {
+  width: 100%;
+  height: 64px;
+}
+
+.application-playstore {
+  background: url("../images/android.png") no-repeat;
+  background-size: contain;
+}
+
+.application-applestore {
+  background: url("../images/apple.png") no-repeat;
+  background-size: contain;
+}
 
 
 
