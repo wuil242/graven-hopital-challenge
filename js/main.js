@@ -55,8 +55,6 @@ class Menu {
 const m1 = new Menu('drop')
 const m2 = new Menu('drop-2', {visible: 'fa-angle-up', hidden: 'fa-angle-down'})
 
-console.log(m2)
-
 
 
 
