@@ -139,6 +139,22 @@ img {
   margin: 25px auto;
 }
 
+.form-textarea {
+  width: 85%;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px red;
+}
+
+.form-textarea:focus {
+  font-size: 1.5rem;
+  transition: font-size .3s;
+  border: solid 1px red;
+}
+
+
 
 /** Button */
 .button {
@@ -434,6 +450,14 @@ img {
 
 .news-text {
 
+}
+
+/*
+    <!-- Contact -->
+*/
+
+/*Contact */
+.contact {
 }
 
 
