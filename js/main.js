@@ -15,6 +15,8 @@ class Menu {
        this.replaceIcon.apply(this)
     }
     
+    this.btn.checked = false
+    this.btnEvent.apply(this)
     this.bindEvent()
   }
 
@@ -29,7 +31,7 @@ class Menu {
    * 
    */
   btnEvent() {
-    if(this.btn.checked === true) {
+    if(this.btn.checked === false) {
       this.menu.style.display = 'none'
       if(this.main) this.mainMenu.classList.add('active')
     }else {
