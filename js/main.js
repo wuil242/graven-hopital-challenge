@@ -3,9 +3,11 @@
  */
 class Menu {
 
-  constructor(selector, icon = null) {
+  constructor(selector, icon = null, main = false) {
     this.btn = document.getElementById(selector)
+    this.main = main
     this.menu = document.getElementById('_' + selector)
+    this.mainMenu = document.querySelector('.menu')
     this.icon = icon
     this.iconElements = icon != null ? Array.from(document.querySelectorAll('.' + icon.hidden)) : null
 
@@ -29,8 +31,10 @@ class Menu {
   btnEvent() {
     if(this.btn.checked === true) {
       this.menu.style.display = 'none'
+      if(this.main) this.mainMenu.classList.add('active')
     }else {
       this.menu.style.display = 'block'
+      if(this.main) this.mainMenu.classList.remove('active')
     }
 
     this.replaceIcon()
@@ -52,7 +56,7 @@ class Menu {
   }
 }
 
-const m1 = new Menu('drop')
+const m1 = new Menu('drop', null, true)
 const m2 = new Menu('drop-2', {visible: 'fa-angle-up', hidden: 'fa-angle-down'})
 
 

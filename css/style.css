@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-
+  scroll-behavior: smooth;
   /* background-color: #00bfba; */
 }
 
@@ -220,10 +220,30 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
+}
+
+.menu.active {
+  background-color: #00bfba;
+}
+
+.menu.active > label {
+  color:white;
+}
+
+.menu > label {
+  color:#00bfba;
+  border-radius: 3px;
+}
+
+.menu > ul {
+  box-shadow: 0px 0px 2px #00bfba;
 }
 
 .menu label, .menu li {
   cursor: pointer;
+  padding: 10px;
 }
 
 .menu li {
