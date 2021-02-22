@@ -52,6 +52,9 @@
 	content: "\f10d";
 }
 
+.fa-pen-square:before {
+  content: "\f14b"; }
+
 /** Icon Animation */
 .fa-spin {
 	-webkit-animation: fa-spin 2s infinite linear;

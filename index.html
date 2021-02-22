@@ -10,31 +10,34 @@
 		<!-- Custom-Files -->
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 
-		<!-- add style file -->
+		<!-- Style file -->
 		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Main js file-->
+		<script src="js/main.js" defer></script>
 
 	</head>
 
 	<body>
 		<!-- bannière principale -->
-		<div id="home">
+		<div id="home" class="home">
 			<!-- haut de page -->
-			<header>
-				<div>
+			<header class="header">
+				<div class="header-top">
 					<!-- numero de telephone -->
-					<p><span class="fa fa-phone-volume"></span>+331 20 20 20 20</p>
+					<p class="number-phone"><span class="fa fa-phone-volume"></span>+331 20 20 20 20</p>
 					
 					<!-- logo -->
-					<h1><a href="index.html">Gravizen<img src="images/logo.png" alt=" "></a></h1>
+					<h1 class="title header-title"><a href="index.html">Gravizen<img src="images/logo.png" alt=" "></a></h1>
 				</div>
 			</header>
 			<!-- haut de page -->
 			<!-- menu de navigation -->
 			<div>
-				<nav>
+				<nav class="menu">
 					<label for="drop">Menu</label>
 					<input type="checkbox" id="drop" />
-					<ul>
+					<ul id="_drop">
 						<li><a href="index.html">Accueil</a></li>
 						<li><a href="#about">A Propos</a></li>
 						<li><a href="#services">Services</a></li>
@@ -45,7 +48,7 @@
 							</label>
 							<a href="#">Application <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2" />
-							<ul>
+							<ul id="_drop-2">
 								<li><a href="#application">Télécharger l'appli</a></li>
 								<li><a href="#appointment">Réserver en ligne</a></li>
 							</ul>
@@ -58,15 +61,15 @@
 			<!-- //menu de navigation -->
 
 			<!-- bannière d'accueil -->
-			<div>
-				<div>
+			<div class="baner">
+				<div class="baner-image">
 					<img src="images/banner.png" alt="" />
 				</div>
-				<div>
-					<h6>Bienvenue sur Gravizen</h6>
-					<h3>Des professionnels de la santé à votre service</h3>
-					<p>La consultation à distance n'a jamais été aussi simple</p>
-					<a href="#appointment">Prendre rendez-vous</a>
+				<div class="baner-content">
+					<h6 class="baner-title">Bienvenue sur Gravizen</h6>
+					<h3 class="baner-subtitle">Des professionnels de la santé à votre service</h3>
+					<p class="baner-text">La consultation à distance n'a jamais été aussi simple</p>
+					<a href="#appointment" class="baner-link">Prendre rendez-vous</a>
 				</div>
 			</div>
 			<!-- //bannière d'accueil -->
@@ -74,11 +77,11 @@
 		<!-- //bannière principale -->
 
 		<!-- Informations -->
-		<section id="infos">
-			<div>
-				<div>
-					<div>
-						<div>
+		<section id="infos" class="infos">
+			<div class="infos-cards">
+				<div class="card infos-card">
+					<div class="infos-card-content">
+						<div class="infos-card-icon">
 							<span class="fa fa-phone"></span>
 						</div>
 						<div>
@@ -87,22 +90,22 @@
 						</div>
 					</div>
 				</div>
-				<div>
-					<div>
-						<div>
+				<div class="card infos-card">
+					<div class="infos-card-content">
+						<div class="infos-card-icon">
 							<span class="fa fa-clock"></span>
 						</div>
-						<div >
+						<div>
 							<h3>Horaires</h3>
 							<p>Lundi-Vendredi : 8h-22h</p>
 							<p>Week-end : 7h-23h</p>
 						</div>
 					</div>
 				</div>
-				<div>
-					<div>
-						<div>
-							<span class="fa fa-pencil-square-o"></span>
+				<div class="card infos-card">
+					<div class="infos-card-content">
+						<div class="infos-card-icon">
+							<span class="fa fa-pen-square"></span>
 						</div>
 						<div>
 							<h3>Rendez-vous</h3>
@@ -421,7 +424,7 @@
 		
 		<a href="#home">
 			<span aria-hidden="true"></span>
-		</a>
+		</a> 
 
 	</body>
 
