@@ -104,6 +104,11 @@ img {
 
 }
 
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
 /* Form */
 .form {
   display: flex;
@@ -358,7 +363,51 @@ img {
   background-size: contain;
 }
 
+/** Médecins  */
 
+/*Doctors */
+.doctors {
+
+}
+
+.doctor {
+  position: relative;
+} 
+
+.doctor-image {
+  width: 50%;
+}
+
+.doctor-content {
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doctor-name {
+  font-size: 1.5rem;
+}
+
+.doctor-job {
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+/** Articles de blog */
+
+/*News */
+.news {
+
+}
+
+.news-image img {
+  width: 100%;
+  height: 100px;
+}
 
 
 
